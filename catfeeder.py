@@ -2,6 +2,7 @@ import functools
 import os
 import random
 import time
+from servo import Servo
 from piui import PiUi
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -10,6 +11,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 class CatFeeder(object):
 
     def __init__(self):
+        servo = Servo()
         self.title = None
         self.txt = None
         self.img = None
