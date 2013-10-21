@@ -7,7 +7,7 @@ from piui import PiUi
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 
-class DemoPiUi(object):
+class CatFeeder(object):
 
     def __init__(self):
         self.title = None
