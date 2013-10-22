@@ -33,8 +33,8 @@ class Servo:
   def servo_CCW(self, angleUS):
     # Set servo on Servo1Pin to 2000s (2.0ms)
     # This rotates the servo CounterCW
-    servo.set_servo(Servo2Pin, angleUS)
+    self.servo.set_servo(Servo2Pin, angleUS)
     time.sleep(SleepTime)
     # Clear servo on Servo1Pin
-    servo.stop_servo(Servo2Pin)
+    self.servo.stop_servo(Servo2Pin)
     time.sleep(.25)
