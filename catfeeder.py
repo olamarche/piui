@@ -66,7 +66,7 @@ class CatFeeder(object):
         con.print_line("Hello Console!")
 
     def main_menu(self):
-        self.page = self.ui.new_ui_page(title="PiUi")
+        self.page = self.ui.new_ui_page(title="Cat Feeder")
         self.list = self.page.add_list()
         self.list.add_item("Static Content", chevron=True, onclick=self.page_static)
         self.list.add_item("Buttons", chevron=True, onclick=self.page_buttons)
