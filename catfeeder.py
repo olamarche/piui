@@ -13,7 +13,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 class CatFeeder(object):
 
     def __init__(self):
-        servo = Servo()
+        self.servo = Servo()
         self.title = None
         self.txt = None
         self.img = None
@@ -53,11 +53,11 @@ class CatFeeder(object):
 
     def onupclick(self):
         self.title.set_text("Up ")
-        servo.servo_CW(1200)
+        self.servo.servo_CW(1200)
 
     def ondownclick(self):
         self.title.set_text("Down")
-        servo.servo_CCW(2000)
+        self.servo.servo_CCW(2000)
 
 def main():
   piui = CatFeeder()
