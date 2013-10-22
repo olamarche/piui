@@ -30,14 +30,6 @@ class Servo:
     self.servo.stop_servo(Servo2Pin)
     time.sleep(.25)
 
-  def dual_servo_CW(self, angleUS):
-    # Set servo on Servo1Pin to 1200us (1.2ms)
-    # This rotates the servo CW.
-    servo.set_servo(Servo1PIN, angleUS)
-    time.sleep(SleepTime)
-    servo.stop_servo(Servo1PIN)
-    time.sleep(.25)
-
   def servo_CCW(self, angleUS):
     # Set servo on Servo1Pin to 2000s (2.0ms)
     # This rotates the servo CounterCW
