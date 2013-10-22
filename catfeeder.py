@@ -52,11 +52,11 @@ class CatFeeder(object):
                 self.page.add_textbox(row, "p")
 
     def onupclick(self):
-        self.title.set_text("Up ")
+        self.title.set_text("Ouvert ")
         self.servo.servo_CW(1200)
 
     def ondownclick(self):
-        self.title.set_text("Down")
+        self.title.set_text("Ferme ")
         self.servo.servo_CCW(2000)
 
 def main():

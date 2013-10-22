@@ -14,12 +14,10 @@ from RPIO import PWM
 import time
 import RPi.GPIO as GPIO
 
-
+Servo2Pin=18
+SleepTime=1
 
 class Servo:
-
-  Servo2Pin=18
-  SleepTime=1
 
   def __init__(self):
     self.servo = PWM.Servo()
